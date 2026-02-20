@@ -1,5 +1,5 @@
 # 🦴 Welcome to the Repo for Abyssal Exile 🦴
-As per the repo description, this is a **C++** Terminal Based, Choose your own Adventure Horror Game. 
+As per the repo description, this is a Terminal Based, **C++**, Choose your own Adventure Horror Game. 
 
 ☠️ The adventure takes place in a horrible void, scathed in darkness and home to terrible entities. It is unclear how you ended up here, or if escape will ever be possible. Experience the realm if you dare... ☠️
 
