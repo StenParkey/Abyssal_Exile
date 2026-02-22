@@ -8,49 +8,50 @@ int main() {
 
 	while (running) {
 		// Question 1
-		std::cout << "You gaze into the darkness\n";
-		std::cout << "What do you do now?  (options: 1=scan, 2=blink, or 3=run)\n";
+		std::cout << "\nYou feel tattered and desolate.\nStrange echos of shifting sands and lapping waves assault your aching senses as you gaze out into the darkness...\n";
+		std::cout << "\nWhat will you do? (options: 1=scan, 2=blink, or 3=run)\n";
 		std::cin >> choice1;
+
 		switch (choice1) {
 			case 1:
 				//scan
-				std::cout << "You see faint movement in the dark, something large about 100 ft above and in front of you...\n";
+				std::cout << "You see faint movement in the dark\n\nsomething large...\nHovering..\n\nAbout 120ft above and in front of you...\n";
 				// Question 2
-				std::cout << "What do you do now? (options: 1=scream , 2=peer , or 3=run)\n";
+				std::cout << "\nWhat do you do now? (options: 1=scream, 2=peer, or 3=run)\n";
 				std::cin >> choice2;
 				switch (choice2) {
 					case 1:
 						//scream
-						std::cout << "You scream out and the beast above snatches you up into dusty tendrils. You are horrifically devoured...\n";
+						std::cout << "You scream out and the beast above snatches you up into its dusty tendrils.\nYou are horrifically devoured...\n";
 						running = false;
 						//break question 2
 						break;
 					case 2:
 						//peer
-						std::cout << "You peer at it, and its ghastly form becomes clearer to your adjusting eyes. It is hungry. Saliva drips from a mouth beaneath the floating dry crusty tendrils...\n";
+						std::cout << "You peer at it, and its ghastly form becomes clearer to your freshly adjusted eyes.\n\nIt is hungry... Saliva drips from a mouth beaneath crusty tendrils...\n";
 						// Question 3
-						std::cout << "What do you do now? (options: 1=sit 2=exhale 3=run)\n";
+						std::cout << "\nWhat do you do now? (options: 1=sit, 2=exhale, or 3=run)\n";
 						std::cin >> choice3;
 						switch (choice3) {
 							case 1:
 								//sit
-								std::cout << "You sit down and lay low beneath the beast, the cool sand greets you and you doze off...\n";
+								std::cout << "Exhausted, you slowly sit down and lay low beneath the beast, the cool sand welcomes you and you doze off into a dreamless sleep...\n";
 								running = false;
 								//break question 3
 								break;
 							case 2:
 								//exhale
-								std::cout << "You take a deep breath but the beast senses your awareness, it snatches you up and you are ripped apart...\n";
+								std::cout << "You take a deep breath out..\n\nBut the beast senses you.. it snatches you up and you are ripped apart...\n";
 								running = false;
 								//break question 3
 								break;
 							case 3:
-								std::cout << "You turn your back to run and you hear faint the faint grand laughter of the beast above, it snatches you up and devours you whole...\n";
+								std::cout << "You turn your back to run and you hear deep despicable groans that mimic laughter from the beast above..\n\nIt snatches you up and devours you whole...\n";
 								running = false;
 								//break question 3
 								break;
 							default:
-								std::cout << "Invalid choice! Please choose either 1=, 2=, or 3=run\n";
+								std::cout << "Invalid choice! Please input a number for either 1=sit, 2=exhale, or 3=run\n";
 								std::cin >> choice3;
 								break;
 						}
@@ -58,12 +59,12 @@ int main() {
 						break;
 					case 3:
 						//run
-						std::cout << "You turn your back to run but you pass out from exhaustion before you can take a step, goodnight...\n";
+						std::cout << "You turn your back to run.\nBut before you can even take a step, you pass out from exhaustion.\nGoodnight...\n";
 						running = false;
 						//break question 2
 						break;
 					default:
-						std::cout << "Invalid choice! Please choose either 1=, 2=, or 3=run\n";
+						std::cout << "Invalid choice! Please input a number for either 1=scream, 2=peer, or 3=run\n";
 						std::cin >> choice2;
 						break;
 				}
@@ -71,38 +72,39 @@ int main() {
 				break;
 			case 2:
 				//blink
-				std::cout << "You take a moment and blink, letting your eyes adjust to the darkness. During the brief moment your eyes were shut. You feel something bite at your feet from beneath cold sands..\n";
+				std::cout << "You take a moment and blink, letting your eyes adjust to the darkness.\nYou feel something bite at your feet from beneath cold sands..\n";
 				// Question 2
 				std::cout << "(options: 1=relax, 2=stomp, or 3=run)\n";
 				std::cin >> choice2;
 				switch (choice2) {
 					case 1:
 						//relax
-						std::cout << "You loosen your muscles and you feel a cool breeze run over you, despite the eery environment a floral smell wafts your way....\n";
+						std::cout << "You relax your senses and feel a cool breeze run over you..\n\ndespite the eery environment a floral smell wafts your way....\n";
 						// Question 3
-						std::cout << "What do you do now? (options 1=inhale 2=lay 3=run)\n";
+						std::cout << "\nWhat do you do now? (options 1=inhale, 2=lay, or 3=run)\n";
 						std::cin >> choice3;
 						switch (choice3) {
 							case 1:
 								//inhale
-								std::cout << "You breath in and attempt to smell the floral scent closer, and it entrances you into a deep slumber, you are restless and have horrible nightmares...\n";
+								std::cout << "You breath in and attempt to smell the floral scent closer, and it entrances you into a deep slumber.\nYour sleep is restless and full of horrible nightmares...\n";
 								running = false;
 								//break question 3
 								break;
 							case 2:
 								//lay
-								std::cout << "You lay down onto the cool sand and the bug bites again at your back, but you instictually grab it and devour it whole. It tastes bitter and you fall asleep...\n";
+								std::cout << "You lay down onto the cool sand and the bug bites again at your back.\n\nYou impulsively grab it and devour it whole.\nIt tastes bitter\n\nYou vomit and pass out of exhaustion...\n";
 								running = false;
 								//break question 3
 								break;
 							case 3:
-								std::cout << "You turn your back to run but you pass out from exhaustion before you can take a step, goodnight...\n";
+
+								std::cout << "You turn your back to run.\nBut before you can even take a step, you pass out from exhaustion.\nGoodnight...\n";
 								running = false;
 
 								//break question 3
 								break;
 							default:
-								std::cout << "Invalid choice! Please choose either 1=, 2=, or 3=run\n";
+								std::cout << "Invalid choice! Please input a number for either 1=inhale, 2=lay, or 3=run\n";
 								std::cin >> choice3;
 								break;
 						}
@@ -110,18 +112,18 @@ int main() {
 						break;
 					case 2:
 						//stomp
-						std::cout << "You crush a hard bug beneath your foot but your stomp reveals your location to the dead beneath the sand, something rough and boney graps your ankles and drags you under.. you suffocate...\n";
+						std::cout << "You crush a hard bug beneath your foot it squelches and your foot feels wet.\n\nYour stomp alerts to latent dead beneath the sand.\nSomething rough and boney graps your ankles and drags you under..\nyou suffocate...\n";
 						running = false;
 						//break question 2
 						break;
 					case 3:
 						//run
-						std::cout << "You turn your back to run but you feel something cold and boney drag you under the sand, your lungs fill with sand...\n";
+						std::cout << "You turn your back to run but you gasp for air as you feel something cold and boney drag you under the sand.\nYour lungs fill with sand...\n";
 						running = false;
 						//break question 2
 						break;
 					default:
-						std::cout << "Invalid choice! Please choose either 1=, 2=, or 3=run\n";
+						std::cout << "Invalid choice! Please a number for either 1=relax, 2=stomp, or 3=run\n";
 						std::cin >> choice2;
 						break;
 				}
@@ -129,12 +131,12 @@ int main() {
 				break;
 			case 3:
 				//run
-				std::cout << "You turn your back to run but you pass out from exhaustion before you can take a step, goodnight...\n";
+				std::cout << "You turn your back to run.\nBut before you can even take a step, you pass out from exhaustion.\nGoodnight...\n";
 				running = false;
 				//break question 1
 				break;
 			default:
-				std::cout << "Invalid choice! Please choose either 1=scan, 2=blink, or 3=run\n";
+				std::cout << "Invalid choice! Please input a number for either 1=scan, 2=blink, or 3=run\n";
 				std::cin >> choice1;
 				break;
 		};
